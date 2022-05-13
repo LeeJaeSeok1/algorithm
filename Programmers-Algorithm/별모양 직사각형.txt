@@ -1,0 +1,9 @@
+process.stdin.setEncoding('utf-8');
+process.stdin.on('data', data => {
+    const n = data.split(" ");
+    const a = Number(n[0]), b = Number(n[1]);
+    const row = '*'.repeat(a); // *을 a번 반복
+    for(var i = 0; i < b; i++) { // row을 b번 반복
+        console.log(row);    
+    }    
+});
