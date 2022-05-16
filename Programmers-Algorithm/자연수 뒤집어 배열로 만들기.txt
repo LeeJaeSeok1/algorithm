@@ -1,0 +1,11 @@
+function solution(n) {
+    return String(n).split('').reverse().map(num => num = parseInt(num));
+}
+
+// 타입이 숫자(number)인 경우 split을 사용할 수 없기 때문에 
+// split 함수는 하나씩 문자열로 쪼개주기위해 ''사용
+// reverse 배열 순서 거꾸로
+// map n배열을 가져와 num값에 하나하나 넣는다. parseint로 인하여 1개씩 정수로 변환하여 배열로 계속 추가하게됨.
+// parseInt 문자열을 정수로 변환
+
+// 23번 문제
