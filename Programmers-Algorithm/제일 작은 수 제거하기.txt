@@ -1,0 +1,15 @@
+function solution(arr) {
+  if (arr.length === 1) {
+    return [-1];
+  }
+
+  const min = Math.min(...arr);
+    
+  return arr.filter((n) => n !== min);
+}
+
+// 길이가 1인 배열은 [-1]을 리턴해준다.
+// 표준 내장 객체인 Math와 스프레드 문법을 사용하여 최소값을 구해준다.
+// Math.min(4, 3, 2, 1) -> 1
+// filter() 메서드를 사용하여 미리 구해온 1을 제외한 배열을 반환한다.
+// 26번 문제
